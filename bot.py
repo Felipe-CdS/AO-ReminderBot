@@ -27,9 +27,12 @@ client = tweepy.Client(
 if(hours == 13):
     response = client.create_tweet( text=reminder_stream  )
     print(response)
-if(hours == 19):
+elif(hours == 19):
     response = client.create_tweet( text=reminder_voting  )
     print(response)
-if(hours == 21):
+elif(hours == 21):
     response = client.create_tweet( text=reminder_collect )
     print(response)
+else:
+    print("Skipped")
+
