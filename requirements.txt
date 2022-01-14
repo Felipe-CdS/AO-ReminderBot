@@ -1,2 +1,2 @@
 tweepy
-decouple
+python-decouple
