@@ -24,6 +24,10 @@ client = tweepy.Client(
     access_token_secret=config('ACCESS_TOKEN_SECRET')
 )
 
+test = "🤖 | Bom dia!"
+response = client.create_tweet( text=test  )
+print(response)
+
 if(hours == 13):
     response = client.create_tweet( text=reminder_stream  )
     print(response)
