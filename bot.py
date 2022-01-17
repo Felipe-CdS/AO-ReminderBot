@@ -24,14 +24,10 @@ client = tweepy.Client(
     access_token_secret=config('ACCESS_TOKEN_SECRET')
 )
 
-test = "🤖 | Bom dia!"
-response = client.create_tweet( text=test  )
-print(response)
-
 if(hours == 13):
     response = client.create_tweet( text=reminder_stream  )
     print(response)
-elif(hours == 19):
+elif(hours == 17):
     response = client.create_tweet( text=reminder_voting  )
     print(response)
 elif(hours == 21):
@@ -39,4 +35,3 @@ elif(hours == 21):
     print(response)
 else:
     print("Skipped")
-
