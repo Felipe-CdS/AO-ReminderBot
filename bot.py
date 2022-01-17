@@ -24,14 +24,14 @@ client = tweepy.Client(
     access_token_secret=config('ACCESS_TOKEN_SECRET')
 )
 
-if(hours == 13):
-    response = client.create_tweet( text=reminder_stream  )
+if(hours == 14):
+    response = client.create_tweet( text=reminder_voting )
     print(response)
 elif(hours == 17):
-    response = client.create_tweet( text=reminder_voting  )
+    response = client.create_tweet( text=reminder_collect )
     print(response)
 elif(hours == 21):
-    response = client.create_tweet( text=reminder_collect )
+    response = client.create_tweet( text=reminder_stream )
     print(response)
 else:
     print("Skipped")
