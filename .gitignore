@@ -1,3 +1,5 @@
 .env
 .reminderBotEnv
 README.md
+__pycache__/
+*.pyc

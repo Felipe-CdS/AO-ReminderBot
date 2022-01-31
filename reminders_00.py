@@ -12,7 +12,7 @@ reminder_collect = f"🔔 | Lembrete - COLETA({day}/{month})\n\nONCEs, entrem no
 response = "Log: Test skipped"
 
 # Reminder voting: 11:00h BRT
-if(hours == 14):
+if(hours == 13):
     response = new_tweet(reminder_voting)
 # Reminder collect: 14:00h BRT
 elif(hours == 17):
